@@ -1,0 +1,13 @@
+#pricearea-dropdown {
+    background-color:#303030;
+    color: rgb(160, 144, 0);
+    border-color: rgb(160, 144, 0);
+    font-size: 14px;
+    background: #303030
+  }
+
+
+/* White HR  */
+hr {
+  color: white;
+}
