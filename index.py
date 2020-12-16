@@ -46,14 +46,12 @@ app.layout = html.Div([
 def display_page(pathname):
     if pathname == '/pages/overview':
         return overview.layout
-    elif pathname == '/':
-        return overview.layout
     elif pathname == '/pages/mapview':
         return mapview.layout
     elif pathname == '/pages/elmarket':
         return elmarket.layout
     else:
-        return '404 Page Error'
+        return '404 Page Error - Click on a Page'
 
 if __name__ == '__main__':
     app.run_server(debug=True)
