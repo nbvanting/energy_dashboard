@@ -51,7 +51,7 @@ def display_page(pathname):
     elif pathname == '/pages/elmarket':
         return elmarket.layout
     else:
-        return '404 Page Error - Click on a Page'
+        return overview.layout
 
 if __name__ == '__main__':
     app.run_server(debug=True)

@@ -16,7 +16,7 @@ api = EnergiAPI()
 
 # Data & Cleaning
 ## GEOJSON Data File
-with open('../dashboard/assets/geo_municipalities.json') as j:
+with open('../energy_dashboard/assets/geo_municipalities.json') as j:
     municipalities = json.load(j)
 
 ## Labels
@@ -27,7 +27,7 @@ labels = pd.DataFrame(ls, columns=['MunicipalityNo', 'Municipality']).drop_dupli
 labels = labels.astype(str)
 
 ## Mapbox Style Token
-with open('../dashboard/assets/token.txt') as f:
+with open('../energy_dashboard/assets/token.txt') as f:
     token = f.read()
 
 ## Production Data
